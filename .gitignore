@@ -11,5 +11,11 @@ public/assets/css/*.min.css
 public/assets/css/*.min.css.map
 public/assets/js/*.min.js
 public/assets/js/*.min.js.map
+public/assets/font/*
+!public/assets/font/.gitkeep
+public/assets/image/*
+!public/assets/image/.gitkeep
+public/assets/css/scss/_icons/*
+!public/assets/css/scss/_icons/.gitkeep
 package-lock.json
 composer.lock
