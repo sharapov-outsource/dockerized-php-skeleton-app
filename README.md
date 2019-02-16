@@ -1,0 +1,1 @@
+# Dockerized PHP application skeleton

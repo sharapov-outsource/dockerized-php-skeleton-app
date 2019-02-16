@@ -1,0 +1,33 @@
+.l--btn {
+  border:        0;
+  border-radius: $button-radius;
+  background:    $button-bg-color;
+  color:         $button-color;
+  padding:       $button-paddings;
+  font-size:     $button-font-size;
+  @include transition($transition-base);
+
+  @include hover-focus-active {
+    background: $button-bg-hover-color;
+    color:      $button-hover-color;
+    outline:    0;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity:    1;
+    background: lighten($button-bg-color, 5%);
+    color:      lighten($button-color, 60%);
+
+    @include hover {
+      background: lighten($button-bg-color, 5%);
+      color:      lighten($button-color, 60%);
+    }
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}

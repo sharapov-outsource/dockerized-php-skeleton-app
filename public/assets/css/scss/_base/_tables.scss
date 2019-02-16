@@ -1,0 +1,10 @@
+.l--table {
+  & th {
+    padding:    $table-cell-padding;
+    background: $table-bg-caption-color;
+  }
+
+  & td {
+    padding: $table-cell-padding;
+  }
+}

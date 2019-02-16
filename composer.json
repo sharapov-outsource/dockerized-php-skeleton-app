@@ -1,0 +1,30 @@
+{
+  "name": "sharapov/dockerized-php-skeleton-app",
+  "description": "Dockerized PHP environment. This repository is a docker boilerplate for PHP web apps.",
+  "type": "library",
+  "license": "GPL-3.0",
+  "keywords": [
+    "docker",
+    "boilerplate-application",
+    "php"
+  ],
+  "homepage": "https://github.com/sharapov-outsource/dockerized-php-skeleton-app",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "extra": [],
+  "scripts": {
+  }
+}

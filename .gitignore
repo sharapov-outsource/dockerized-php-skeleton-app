@@ -1,0 +1,15 @@
+.vagrant/
+vendor/
+.idea
+etc/log/*
+!etc/log/.gitkeep
+etc/tmp/*
+!etc/tmp/.gitkeep
+node_modules
+.sass-cache
+public/assets/css/*.min.css
+public/assets/css/*.min.css.map
+public/assets/js/*.min.js
+public/assets/js/*.min.js.map
+package-lock.json
+composer.lock

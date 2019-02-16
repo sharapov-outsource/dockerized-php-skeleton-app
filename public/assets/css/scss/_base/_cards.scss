@@ -1,0 +1,20 @@
+ul {
+  &.l--card {
+    width:      100%;
+    background: $card-bg-color;
+    min-height: $card-min-height;
+    text-align: center;
+    padding:    $card-inner-padding;
+    box-sizing: border-box;
+
+    & li {
+      display:      inline-block;
+      *display:     inline; /*IE7*/
+      *zoom:        1; /*IE7*/
+      background:   $card-bg-inner-color;
+      color:        $card-inner-color;
+      margin-right: $card-inner-padding - 0.5em;
+      padding:      $card-inner-padding;
+    }
+  }
+}

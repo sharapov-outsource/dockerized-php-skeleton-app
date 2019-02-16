@@ -1,0 +1,15 @@
+@mixin float-right {
+  float: right;
+}
+
+@mixin float-left {
+  float: left;
+}
+
+@mixin float-none {
+  float: none;
+}
+
+@mixin clearfix {
+  clear: both;
+}

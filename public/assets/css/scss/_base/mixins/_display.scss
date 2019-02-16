@@ -1,0 +1,16 @@
+@mixin display-block {
+  display: block;
+}
+
+@mixin display-inline {
+  display: inline-block;
+}
+
+@mixin display-none {
+  float: none;
+}
+
+@mixin display-centered {
+  margin-left:  auto;
+  margin-right: auto;
+}

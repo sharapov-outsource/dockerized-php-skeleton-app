@@ -1,0 +1,14 @@
+a {
+  color: $link-color;
+  @include transition($transition-base);
+
+  @include hover-focus-active {
+    color:           $link-hover-color;
+    text-decoration: none;
+    outline:         0;
+  }
+
+  &.l--btn {
+    text-decoration: none;
+  }
+}

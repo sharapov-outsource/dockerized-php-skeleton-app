@@ -1,0 +1,47 @@
+.b--pad-top-default {
+  @include padding-top();
+}
+
+.b--pad-top-sm {
+  @include padding-top(2rem);
+}
+
+.b--pad-top-md {
+  @include padding-top(4rem);
+}
+
+.b--pad-top-lg {
+  @include padding-top(6rem);
+}
+
+.b--pad-top-xlg {
+  @include padding-top(8rem);
+}
+
+.b--pad-top-xxlg {
+  @include padding-top(10rem);
+}
+
+.b--pad-bottom-default {
+  @include padding-bottom();
+}
+
+.b--pad-bottom-sm {
+  @include padding-bottom(2rem);
+}
+
+.b--pad-bottom-md {
+  @include padding-bottom(4rem);
+}
+
+.b--pad-bottom-lg {
+  @include padding-bottom(6rem);
+}
+
+.b--pad-bottom-xlg {
+  @include padding-bottom(8rem);
+}
+
+.b--pad-bottom-xxlg {
+  @include padding-bottom(10rem);
+}

@@ -1,0 +1,9 @@
+.l--form {
+  & label {
+    @include display-block;
+
+    & input[type=radio] {
+      @include float-left;
+    }
+  }
+}
