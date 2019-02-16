@@ -4,7 +4,7 @@ services:
     image: ${NGINX_IMAGE_NAME}
     container_name: ${NGINX_CONTAINER_NAME}
     volumes:
-      - "./etc/nginx/skeleton_app_vhost.conf:/etc/nginx/conf.d/vhost.conf"
+      - "./etc/nginx/app_vhost.conf:/etc/nginx/conf.d/app_vhost.conf"
       - "./etc/ssl:/etc/ssl"
       - "./etc/log:/var/log/nginx"
       - "./public:/var/www/public"
