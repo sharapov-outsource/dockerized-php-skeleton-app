@@ -82,8 +82,8 @@ chown -R $APACHE_USER.$APACHE_USER $ROOT_PATH$TARGET_RELEASE_DIR
 echo "Creating symlinks"
 #ln -sfnv $USER_ROOT/shared/node_modules $ROOT_PATH$TARGET_RELEASE_DIR/node_modules
 
-#echo "Running grunt tasks"
-#grunt
+echo "Running grunt tasks"
+grunt
 
 echo "Cleaning up"
 rm -f package*
