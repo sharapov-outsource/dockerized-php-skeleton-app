@@ -109,6 +109,6 @@ ln -sfnv $ROOT_PATH$TARGET_RELEASE_DIR/public $USER_ROOT/public
 chown -h $APACHE_USER.$APACHE_GROUP $USER_ROOT/public
 
 # Changing web root in the container config file
-sed -i '/set $host_path/c\set $host_path "'${ROOT_PATH}${TARGET_RELEASE_DIR}'/public";' $USER_ROOT/etc/nginx/skeleton_app_vhost.conf
+sed -i '/set $host_path/c\set $host_path "'${ROOT_PATH}${TARGET_RELEASE_DIR}'/public";' $USER_ROOT/etc/nginx/app_vhost.conf
 
 echo "Version "${VERSION}" has been released"
