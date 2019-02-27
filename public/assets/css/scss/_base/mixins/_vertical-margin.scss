@@ -1,0 +1,7 @@
+@mixin margin-top($string) {
+  margin-top: $string;
+}
+
+@mixin margin-bottom($string) {
+  margin-bottom: $string;
+}

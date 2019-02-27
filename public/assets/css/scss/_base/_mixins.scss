@@ -7,6 +7,8 @@
 @import "mixins/_normalize/import-now";
 @import "mixins/hover";
 @import "mixins/transition";
+@import "mixins/transform";
+@import "mixins/animation";
 @import "mixins/placeholder";
 @import "mixins/triangle";
 @import "mixins/float";
@@ -14,4 +16,5 @@
 @import "mixins/max-width";
 @import "mixins/circle";
 @import "mixins/gradient";
-@import "mixins/padding";
+@import "mixins/vertical-padding";
+@import "mixins/border-radius";

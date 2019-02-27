@@ -1,16 +1,15 @@
 .l--spinner {
-  animation: rotate 2s linear infinite;
-  z-index:   2;
-  position:  absolute;
-  width:     2rem;
-  height:    2rem;
+  @include animation(rotate 2s linear infinite);
+  z-index:  2;
+  position: absolute;
+  width:    $spinner-size;
+  height:   $spinner-size;
 
   circle {
+    @include animation(dash 1.5s ease-in-out infinite);
     stroke:         $spinner-stroke-color;
     stroke-linecap: round;
-    animation:      dash 1.5s ease-in-out infinite;
   }
-
 }
 
 @keyframes rotate {

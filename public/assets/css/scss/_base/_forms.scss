@@ -4,6 +4,7 @@
 
     & input[type=radio] {
       @include float-left;
+      margin-right: 0.4em;
     }
   }
 }

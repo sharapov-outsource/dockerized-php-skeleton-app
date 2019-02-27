@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="l--constrained">
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Buttons</legend>
     <button class="l--btn">Button</button>
     <button class="l--btn" disabled>Disabled button</button>
@@ -24,12 +24,12 @@
     <input class="l--btn" type="button" value="Button" />
     <input class="l--btn" type="reset" value="Reset" />
   </fieldset>
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Links</legend>
     <a href="#">Demo link</a>
     <a href="#" class="l--btn">Button</a>
   </fieldset>
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Tables</legend>
     <table class="l--table">
       <thead>
@@ -58,7 +58,7 @@
       </tbody>
     </table>
   </fieldset>
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Headings</legend>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -67,7 +67,7 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
   </fieldset>
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Cards</legend>
     <ul class="l--card">
       <li>test</li>
@@ -77,7 +77,7 @@
       <li>test</li>
     </ul>
   </fieldset>
-  <fieldset style="margin-bottom: 2em">
+  <fieldset class="m--bottom-lg">
     <legend>Inputs</legend>
     <form class="l--form">
       <label>Standard input
@@ -99,11 +99,22 @@
       </label>
     </form>
   </fieldset>
-  <fieldset style="margin-bottom: 3em;">
+  <fieldset class="m--bottom-lg" style="height: 3em;">
     <legend>Spinner</legend>
     <svg class="l--spinner" viewBox="0 0 50 50">
       <circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
     </svg>
+  </fieldset>
+  <fieldset class="m--bottom-lg">
+    <legend>Predefined fontello icons</legend>
+    <i class="icon--home"></i>
+    <i class="icon--cog"></i>
+    <i class="icon--user"></i>
+    <i class="icon--menu"></i>
+    <i class="icon--download-cloud"></i>
+    <i class="icon--doc-text"></i>
+    <i class="icon--apple"></i>
+    <i class="icon--git"></i>
   </fieldset>
 </div>
 </body>

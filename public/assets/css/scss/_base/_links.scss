@@ -1,6 +1,6 @@
 a {
   color: $link-color;
-  @include transition($transition-base);
+  @include transition();
 
   @include hover-focus-active {
     color:           $link-hover-color;

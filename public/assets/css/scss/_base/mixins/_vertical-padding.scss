@@ -1,0 +1,7 @@
+@mixin padding-top($string) {
+  padding-top: $string;
+}
+
+@mixin padding-bottom($string) {
+  padding-bottom: $string;
+}

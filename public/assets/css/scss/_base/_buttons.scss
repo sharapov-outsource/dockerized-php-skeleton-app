@@ -1,11 +1,10 @@
 .l--btn {
-  border:        0;
-  border-radius: $button-radius;
-  background:    $button-bg-color;
-  color:         $button-color;
-  padding:       $button-paddings;
-  font-size:     $button-font-size;
-  @include transition($transition-base);
+  border:     0;
+  background: $button-bg-color;
+  color:      $button-color;
+  padding:    $button-paddings;
+  font-size:  $button-font-size;
+  @include border-radius();
 
   @include hover-focus-active {
     background: $button-bg-hover-color;

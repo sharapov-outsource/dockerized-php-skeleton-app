@@ -1,14 +1,3 @@
-//  Author: Rafal Bromirski
-//  www: http://rafalbromirski.com/
-//  github: http://github.com/rafalbromirski/sass-mediaqueries
-//
-//  Licensed under a MIT License
-//
-//  Version:
-//  1.6.1
-
-// --- generator ---------------------------------------------------------------
-
 @mixin mq($args...) {
   $media-type: 'only screen';
   $media-type-key: 'media-type';
