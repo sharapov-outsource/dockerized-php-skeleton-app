@@ -6,6 +6,7 @@
  * Date: 2019-02-15
  * Time: 15:40
  */
+include '../vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -116,6 +117,25 @@
     <i class="icon--apple"></i>
     <i class="icon--git"></i>
   </fieldset>
+</div>
+<div class="l--constrained">
+  <fieldset class="m--bottom-lg">
+    <legend>Database connection</legend>
+    <?php
+    $dotenv = Dotenv\Dotenv::create('../');
+    $dotenv->load();
+
+    try {
+      $dbh = new PDO("mysql:host=" . getenv('MYSQL_HOST') . ";dbname=" . getenv('MYSQL_DATABASE'),
+                     getenv('MYSQL_USER'),
+                     getenv('MYSQL_PASSWORD')
+      );
+      print '<p class="t--green">Successfully connected</p>';
+    } catch (PDOException $e) {
+      print $e->getMessage();
+    }
+    ?>
+    </fieldset>
 </div>
 </body>
 </html>

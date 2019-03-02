@@ -1,0 +1,18 @@
+$texts: (
+            blue: $blue,
+            indigo: $indigo,
+            purple: $purple,
+            pink: $pink,
+            red: $red,
+            orange: $orange,
+            yellow: $yellow,
+            green: $green,
+            teal: $teal,
+            cyan: $cyan
+        );
+
+@each $color, $hex in $texts {
+  .t--#{$color} {
+    color: $hex;
+  }
+}

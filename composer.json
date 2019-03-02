@@ -12,9 +12,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": "^7.0"
+    "php": "^7.0",
+    "ext-pdo": "*",
+    "ext-json": "*"
   },
   "require-dev": {
+    "vlucas/phpdotenv": "^v3.0"
   },
   "autoload": {
     "psr-4": {
