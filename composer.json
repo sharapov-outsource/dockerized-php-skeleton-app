@@ -9,6 +9,14 @@
     "php"
   ],
   "homepage": "https://github.com/sharapov-outsource/dockerized-php-skeleton-app",
+  "authors": [
+    {
+      "name": "Alexander Sharapov",
+      "email": "alexander@sharapov.biz",
+      "homepage": "http://sharapov.biz",
+      "role": "Developer"
+    }
+  ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {

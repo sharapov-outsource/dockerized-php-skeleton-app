@@ -35,6 +35,12 @@ services:
     restart: always
     depends_on:
       - database
+  composer:
+    image: ${COMPOSER_IMAGE_NAME}
+    container_name: ${COMPOSER_CONTAINER_NAME}
+    volumes:
+      - "./:/var/www"
+    command: install
   database:
     image: ${DB_IMAGE_NAME}
     container_name: ${DB_CONTAINER_NAME}
