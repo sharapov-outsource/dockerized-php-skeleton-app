@@ -7,7 +7,7 @@
 }
 
 @mixin display-none {
-  float: none;
+  display: none;
 }
 
 @mixin display-centered {

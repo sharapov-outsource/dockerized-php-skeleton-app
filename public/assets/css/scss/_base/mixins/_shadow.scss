@@ -1,0 +1,5 @@
+@mixin shadow($string: $base--shadow) {
+  -webkit-box-shadow: $string;
+  -moz-box-shadow:    $string;
+  box-shadow:         $string;
+}

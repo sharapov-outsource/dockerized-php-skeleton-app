@@ -1,0 +1,14 @@
+$headers: (
+              h1,
+              h2,
+              h3,
+              h4,
+              h5,
+              h6
+          );
+
+@each $type in $headers {
+  #{$type} {
+    margin: .5em 0 1em;
+  }
+}

@@ -4,7 +4,7 @@
   color:      $button-color;
   padding:    $button-paddings;
   font-size:  $button-font-size;
-  @include border-radius();
+  margin:     $button-margin;
 
   @include hover-focus-active {
     background: $button-bg-hover-color;

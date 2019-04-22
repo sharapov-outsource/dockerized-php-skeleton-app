@@ -1,0 +1,13 @@
+fieldset {
+  border-width: $fieldset-border-width;
+  border-style: $fieldset-border-style;
+  border-color: $fieldset-border-color;
+
+  legend {
+    padding: $fieldset-legend-padding;
+  }
+
+  legend + * {
+    clear: both;
+  }
+}

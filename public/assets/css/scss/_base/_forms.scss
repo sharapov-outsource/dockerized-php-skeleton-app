@@ -1,10 +1,69 @@
 .l--form {
   & label {
     @include display-block;
+    margin-bottom: .2em;
+    position:      relative;
 
-    & input[type=radio] {
+    & select,
+    & input,
+    & textarea {
+      display:      inline-block;
+      width:        100%;
+      outline:      none;
+      box-sizing:   border-box;
+      padding:      .6em .4em;
+      font-size:    .9em;
+      border-width: $input-border-width;
+      border-style: $input-border-style;
+      border-color: $input-border-color;
+      border-radius: 0;
+
+      &.disabled,
+      &:disabled {
+        border-color: lighten($input-border-color, 55%);
+      }
+    }
+
+    & input[type=radio],
+    & input[type=checkbox] {
       @include float-left;
       margin-right: 0.4em;
+      font-size:    1em;
+      width:        auto;
     }
+
+    & select {
+      -webkit-appearance: none; /* remove the strong OSX influence from Webkit */
+      &:after {
+        content:        "▼";
+        position:       absolute;
+        right:          .5em;
+        bottom:         .5em;
+        font-size:      .8em;
+        line-height:    1em;
+        color:          $black;
+        pointer-events: none;
+      }
+    }
+
+    /*
+    &:after {
+      content:        "▼";
+      position:       absolute;
+      right:          .5em;
+      bottom:         .5em;
+      font-size:      .8em;
+      line-height:    1em;
+      color:          #000000;
+      pointer-events: none;
+    }*/
+
   }
 }
+
+label + input {
+  & &:after {
+    content: '';
+  }
+}
+

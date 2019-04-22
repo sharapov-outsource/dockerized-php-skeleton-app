@@ -8,13 +8,13 @@ ul {
     box-sizing: border-box;
 
     & li {
-      display:      inline-block;
-      *display:     inline; /*IE7*/
-      *zoom:        1; /*IE7*/
-      background:   $card-bg-inner-color;
-      color:        $card-inner-color;
-      margin-right: $card-inner-padding - 0.5em;
-      padding:      $card-inner-padding;
+      display:    inline-block;
+      *display:   inline; /*IE7*/
+      *zoom:      1; /*IE7*/
+      background: $card-bg-inner-color;
+      color:      $card-inner-color;
+      margin:     $card-inner-padding - 0.7em $card-inner-padding - 0.8em;
+      padding:    $card-inner-padding;
     }
   }
 }

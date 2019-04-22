@@ -1,10 +1,45 @@
 .l--table {
   & th {
-    padding:    $table-cell-padding;
-    background: $table-bg-caption-color;
+    padding:        $table-cell-padding;
+    background:     $table-bg-caption-color;
+    font-weight:    bold;
+    text-transform: uppercase;
   }
 
   & td {
     padding: $table-cell-padding;
   }
+
+  @include max-screen(639px) {
+    & {
+      width: 100%;
+    }
+    & thead {
+      display: none;
+    }
+
+    & tr {
+      border-bottom: 3px solid $gray-300;
+      display:       block;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    & td {
+      border-bottom: 1px solid $gray-300;
+      display:       block;
+      text-align:    right;
+    }
+
+    & td:before {
+      content:        attr(data-label);
+      float:          left;
+      font-weight:    bold;
+      text-transform: uppercase;
+    }
+  }
 }
+
+

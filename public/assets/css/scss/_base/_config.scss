@@ -86,7 +86,8 @@ $button-bg-color: $gray-300 !default;
 $button-bg-hover-color: darken($button-bg-color, 15%) !default;
 $button-paddings: 0.2em 1em !default;
 $button-radius: 1em !default;
-$button-font-size: 1em;
+$button-font-size: 1em !default;
+$button-margin: .1em !default;
 
 // Cards
 $card-color: $gray-400 !default;
@@ -104,8 +105,28 @@ $link-hover-decoration: none !default;
 
 // Spinners
 $spinner-stroke-color: $gray-600 !default;
-$spinner-size: 2em;
+$spinner-size: 2em !default;
 
 // Tables
 $table-cell-padding: 0.75em !default;
 $table-bg-caption-color: $gray-300 !default;
+
+// Fieldsets
+$fieldset-border-width: 1px !default;
+$fieldset-border-style: solid !default;
+$fieldset-border-color: $gray-900 !default;
+$fieldset-legend-padding: 0 .3em !default;
+
+// Form inputs
+$input-radius: 0.2em !default;
+$input-border-width: 1px !default;
+$input-border-style: solid !default;
+$input-border-color: $gray-900 !default;
+
+// Basic modal window
+$modal-background: rgba(255, 255, 255, 0.8);
+$modal-dialog-background: rgba(255, 255, 255, 1);
+$modal-dialog-max-width: 40em;
+
+// Shadow
+$base--shadow: 0 0 4em 1em rgba(175, 175, 175, 1);
