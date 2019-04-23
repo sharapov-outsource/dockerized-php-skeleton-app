@@ -124,9 +124,9 @@ $input-border-style: solid !default;
 $input-border-color: $gray-900 !default;
 
 // Basic modal window
-$modal-background: rgba(255, 255, 255, 0.8);
+$modal-background: rgba(0, 0, 0, 0.4);
 $modal-dialog-background: rgba(255, 255, 255, 1);
 $modal-dialog-max-width: 40em;
 
 // Shadow
-$base--shadow: 0 0 4em 1em rgba(175, 175, 175, 1);
+$base--shadow: 0 0 1em .4em rgba(0, 0, 0, .4);

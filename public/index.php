@@ -158,13 +158,31 @@ include '../vendor/autoload.php';
     <button class="l--btn" data-toggle="modal" data-target="#exampleModal">Open modal</button>
   </fieldset>
 </div>
+
+<div id="exampleInnerModal" class="l--modal">
+  <div class="l--modal-inner">
+    <div class="l--modal-header">
+      Inner demo modal window <button class="l--modal-close"></button>
+    </div>
+    <div class="l--modal-content">
+    <p>Lorem Ipsum is simply. <button
+          class="l--btn" data-toggle="modal" data-target="#exampleInner2Modal">Open modal 2</button></p>
+    </div>
+    <div class="l--modal-footer">
+      <button class="l--btn">Save</button><button class="l--btn l--modal-close">Close</button>
+    </div>
+  </div>
+</div>
+
 <div id="exampleModal" class="l--modal">
   <div class="l--modal-inner">
     <div class="l--modal-header">
       Demo modal window <button class="l--modal-close"></button>
     </div>
     <div class="l--modal-content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <button
+          class="l--btn" data-toggle="modal" data-target="#exampleInnerModal">Open modal</button></p>
     <table class="l--table">
       <thead>
         <tr>
@@ -197,9 +215,38 @@ include '../vendor/autoload.php';
     </div>
   </div>
 </div>
-
-
-
-
+<div id="exampleInner2Modal" class="l--modal">
+  <div class="l--modal-inner">
+    <div class="l--modal-header">
+      Inner demo modal 2 window <button class="l--modal-close"></button>
+    </div>
+    <div class="l--modal-content">
+    <p>Lorem Ipsum is simply.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="l--modal-footer">
+      <button class="l--btn">Save</button><button class="l--btn l--modal-close">Close</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
