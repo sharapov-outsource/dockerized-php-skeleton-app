@@ -37,7 +37,7 @@
       __bindClick(__AppModals, function (event) {
         $__c = __countOpenedModals();
         if (typeof event.target.dataset.target == "undefined") {
-          console.warn("No target popup defined");
+          console.error("No target popup defined");
         } else {
           $__mid = event.target.dataset.target;
           if ($__mid.indexOf('#') === 0) {
@@ -45,7 +45,7 @@
           }
           $__m = document.getElementById($__mid);
           if (!$__m) {
-            console.warn("No target popup defined");
+            console.error("No target popup defined");
           } else {
             $__m.classList.add('open');
             $__m.style.zIndex = (($__c * 5) + 50);
@@ -59,7 +59,7 @@
       __bindClick(__AppModalsClose, function (event) {
         $__p = __findClosest(event.target, '.' + __AppModalsClass);
         if (!$__p) {
-          console.warn("No target popup defined");
+          console.error("No target popup defined");
         } else {
           $__p.classList.remove('open');
           __Body.classList.remove(__AppModalsClass + '-open');
